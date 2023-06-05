@@ -22,13 +22,16 @@ const ApiConnection = () => {
             {
                 zipCode.map((details) => {
                     return (
-                        <div className="container col-md-4 text-center">
+                        <div className="card text-center mt-5">
+                            <div class="card-header">
+                                <h1 className='card-title'>{details.d_codigo}</h1>
+                            </div>
                             <div className="card-body">
-                                <h1>{details.d_codigo}</h1>
-                                <p>{details.d_asenta}</p>
-                                <p>{details.d_mnpio}</p>
-                                <p>{details.d_estado}</p>
-                                <p>{details.d_ciudad}</p>
+                                <p className='card-title'>{details.d_tipo_asenta} - {details.d_asenta}</p>
+                                <p className='card-title'>Zona - {details.d_zona}</p>
+                                <p className='card-title'>Municipio - {details.d_mnpio}</p>
+                                <p className='card-title'>Estado - {details.d_estado}</p>
+                                <p className='card-title'>Cuidad - {details.d_ciudad}</p>
                             </div>
                         </div>
 

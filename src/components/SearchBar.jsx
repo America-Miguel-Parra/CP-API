@@ -16,7 +16,7 @@ const SearchBar = ({ onSearch }) => {
         <form onSubmit={handleFormSubmit}>
             <input
                 type="text"
-                className="form-control"
+                className="form-control text-center p-3" 
                 placeholder="Ingresa el código postal..."
                 aria-label="Recipient's username"
                 aria-describedby="button-addon2"
@@ -24,7 +24,7 @@ const SearchBar = ({ onSearch }) => {
                 onChange={handleInputChange}
             />
             <button type="submit"
-                className="btn btn-outline-dark" >Buscar</button>
+                className="btn btn-outline-secondary mt-3" >Buscar</button>
         </form>
     )
 }
